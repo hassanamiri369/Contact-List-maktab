@@ -30,10 +30,9 @@ function App() {
 
 
   const updateContactHandler = async (contact) => {
-    console.log("contact update",contact)
     const response = await api.put(`http://localhost:8000/contacts/${contact.id}`, contact);
     const { id, name, email } = response.data;
-    // console.log(typeof(id))  // string
+
 
     setContacts(
       contacts.map((contact) => {
