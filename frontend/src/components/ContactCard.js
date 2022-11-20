@@ -7,16 +7,12 @@ const ContactCard = (props) => {
 
   
 
-//  console.log(props.prop)
 
   return (
     <div className="item">
       <img className="ui avatar image" src={user} alt="user" />
       <div className="content">
 
-        {/* اگر مب زده باشیم همچین اتفاقی می افته فقط  */}
-        {/* توی این استیت میاد و دیتای مربوط به همین یوزر رو براش میفرسته فقط این خیلی مهمه  */}
-        {/* همین یوزری که کلیک شده روش رو میگم  */}
         
         <Link to={{ pathname: `/contact/${id}`, state: { contact: props.contact } }}>
           <div className="header">{name}</div>

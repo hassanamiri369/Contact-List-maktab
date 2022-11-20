@@ -44,9 +44,9 @@ function App() {
 
 
   const removeContactHandler = async (id) => {
-    await api.delete(`http://localhost:8000/contacts/${id}`);    // این کار حذف کردن از بک اند رو میکنه 
+    await api.delete(`http://localhost:8000/contacts/${id}`);  
 
-    const newContactList = contacts.filter((contact) => {    // این قسمت هم کار حذف کردن از استیت داخل فرانت رو میکنه 
+    const newContactList = contacts.filter((contact) => {   
       return contact.id !== id;
     });
 
